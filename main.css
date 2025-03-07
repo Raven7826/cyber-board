@@ -5,7 +5,7 @@
     
  }
 
-@import url(url(../../../Downloads/cyberspace-raceway-cufonfonts));
+@import url(url)(./../../Downloads/cyberspace-raceway-cufonfonts));
 
 body{
     font-family: cyberspace-raceway-cufonfonts, sans-serif;
@@ -15,7 +15,7 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 21% 79%;
     border:  chartreuse;
     
 }
@@ -33,23 +33,29 @@ body{
     height: 100vh;
     display: grid;
     grid-template-rows: 20% 80%;
+    
 }
 
 .header{
     background-color: oklch(0.274 0.006 286.033);
     display: flex;
     flex-direction: column;
+    border: 0.5px solid chartreuse;
+    
 }
 
-.navabar{
+.navabar,.left{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px 20px;
+    margin: 2px 19px;
+}
+.bell{
+    margin-left:20px;
 }
 
 .form-input{
-    width: 500px;
+    width: 450px;
     background-color: grey;
     border-radius: 16px;
     border: 1px solid chartreuse;
@@ -57,13 +63,49 @@ body{
     margin-right: 60px;
 }
 
-
 .welcome{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 20px;
 }
+
+.welcome,p{
+    font-size: 10px;
+    color: chartreuse;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 28%;
+}
+
+.btn{
+    font-size: 8px;
+    background-color: chartreuse;
+    width: 45px;
+    height: 20px;
+    color: oklch(0.274 0.006 286.033);
+    border: 1px solid darkslategrey;
+    border-radius: 15px;
+}
+
+h6{
+    color: chartreuse;
+    
+}
+    
+
+
 
 .content{
     background-color: oklch(0.274 0.006 286.033);
+    display: grid;
+    grid-template-columns: 70% 30%;
 
 }
 
